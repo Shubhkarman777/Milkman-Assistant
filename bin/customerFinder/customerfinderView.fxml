@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="550.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customerFinder.customerfinderViewController">
+   <children>
+      <Label layoutX="62.0" layoutY="20.0" text="Customer Finder" textFill="#3d0d90">
+         <font>
+            <Font name="Vineta BT" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="116.0" text="Area:" textFill="#370883">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="area" layoutX="91.0" layoutY="115.0" prefHeight="25.0" prefWidth="87.0" />
+      <Button layoutX="205.0" layoutY="113.0" mnemonicParsing="false" onAction="#fetchArea" text="Fetch Acc. To Area">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#190690" />
+         </effect>
+      </Button>
+      <Button layoutX="373.0" layoutY="113.0" mnemonicParsing="false" onAction="#fetchAll" text="Fetch All Records">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#190690" />
+         </effect>
+      </Button>
+      <Label layoutX="93.0" layoutY="184.0" text="Name:" textFill="#370883">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="159.0" layoutY="183.0" prefHeight="25.0" prefWidth="134.0" promptText="Enter name here">
+         <effect>
+            <Reflection />
+         </effect></TextField>
+      <Button layoutX="308.0" layoutY="181.0" mnemonicParsing="false" onAction="#fetchName" text="Fetch Acc. To Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#190690" />
+         </effect>
+      </Button>
+      <TableView fx:id="tbl" layoutX="77.0" layoutY="250.0" prefHeight="200.0" prefWidth="417.0" />
+      <Separator layoutY="88.0" prefHeight="16.0" prefWidth="572.0" />
+      <Separator layoutY="220.0" prefHeight="16.0" prefWidth="572.0" />
+      <Separator layoutY="157.0" prefHeight="16.0" prefWidth="572.0" />
+   </children>
+</AnchorPane>

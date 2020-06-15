@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="450.0" minWidth="500.0" style="-fx-background-color: pink;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="aboutDeveloper.AboutDeveloperViewController">
+   <children>
+      <Label layoutX="121.0" layoutY="23.0" text="About Developer" textFill="#210c8d">
+         <font>
+            <Font name="Vineta BT" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="132.0" fitWidth="111.0" layoutX="38.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@20170329_160443-1.jpg" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="152.0" layoutY="268.0" prefHeight="132.0" prefWidth="325.0" text="Shubhkarmandeep Kaur,&#10;Persuing B.tech in Punjab Engineering College,&#10;Chandigarh(Computer Science and Engineering),&#10;loves coding in Java, C++, PHP.&#10;#Email: shubhkarman374@gmail.com&#10;#Contact: 90413-75155">
+         <font>
+            <Font name="Constantia" size="13.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="152.0" fitWidth="99.0" layoutX="35.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@itsme.jpg" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="152.0" layoutY="76.0" prefHeight="145.0" prefWidth="325.0" text="Rajesh Kumar Bansal,&#10;17 years experience in Training and Developement,&#10;Founder of realJavaOnline.com,&#10;loves coding in Java(J2SE, J2EE) C++, PHP, Android, &#10;Python.&#10;#Email: bcebti@gmail.com&#10;#Contact: 98722-46056">
+         <font>
+            <Font name="Constantia" size="13.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

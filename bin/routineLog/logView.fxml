@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="550.0" minWidth="630.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="routineLog.logViewController">
+   <children>
+      <Label layoutX="120.0" layoutY="26.0" text="Routine Log" textFill="#401190">
+         <font>
+            <Font name="Vineta BT" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="139.0" text="Name" textFill="#141313">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list1" layoutX="38.0" layoutY="178.0" onMouseClicked="#dofill" prefHeight="200.0" prefWidth="135.0" />
+      <Label layoutX="218.0" layoutY="139.0" text="Address" textFill="#141313">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list2" layoutX="187.0" layoutY="178.0" prefHeight="200.0" prefWidth="135.0" />
+      <Label layoutX="391.0" layoutY="136.0" text="Default Quantity" textFill="#141313" underline="true">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="180.0" text="Cow Qty:" textFill="#4606a7">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cq1" layoutX="417.0" layoutY="178.0" prefHeight="25.0" prefWidth="37.0" />
+      <Label layoutX="463.0" layoutY="180.0" text="Buffalo Qty:" textFill="#4606a7">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bq1" layoutX="569.0" layoutY="178.0" prefHeight="25.0" prefWidth="37.0" />
+      <Label layoutX="381.0" layoutY="225.0" text="Mobile:" textFill="#4606a7">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mob" layoutX="448.0" layoutY="223.0" prefHeight="25.0" prefWidth="114.0">
+         <effect>
+            <Reflection />
+         </effect></TextField>
+      <Label layoutX="379.0" layoutY="275.0" text="Fill Updated Values" textFill="#141313" underline="true">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="337.0" layoutY="316.0" text="Cow Qty:" textFill="#ff0505">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cq2" layoutX="418.0" layoutY="314.0" prefHeight="25.0" prefWidth="37.0" />
+      <TextField fx:id="bq2" layoutX="570.0" layoutY="314.0" prefHeight="25.0" prefWidth="37.0" />
+      <CheckBox fx:id="skip" layoutX="420.0" layoutY="353.0" mnemonicParsing="false" text="Skipped" textFill="#ff0505">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <DatePicker fx:id="dtp" layoutX="428.0" layoutY="398.0" prefHeight="25.0" prefWidth="135.0" promptText="Select date plz" />
+      <Label layoutX="364.0" layoutY="400.0" text="Date:" textFill="#171717">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="108.0" layoutY="438.0" mnemonicParsing="false" onAction="#dodelete" prefHeight="33.0" prefWidth="158.0" text="Delete Others" textFill="#1b1a1a">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow color="#2405bf" height="29.9" radius="13.7075" width="26.93" />
+         </effect>
+      </Button>
+      <Button layoutX="430.0" layoutY="457.0" mnemonicParsing="false" onAction="#doupdate" prefHeight="32.0" prefWidth="90.0" text="UPDATE" textFill="#1b1a1a">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow color="#2405bf" height="29.9" radius="12.9675" width="23.97" />
+         </effect>
+      </Button>
+      <Label layoutX="464.0" layoutY="316.0" text="Buffalo Qty:" textFill="#ff0505">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
